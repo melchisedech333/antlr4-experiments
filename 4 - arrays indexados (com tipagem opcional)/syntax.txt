@@ -1,0 +1,15 @@
+
+    var variable :array =  [ 
+
+        333:int, test, [
+            31337 :float, 123
+        ], "Verbum",
+        1, 2, 3,
+        [
+            "Verbum":str, "Divinus",
+            1337
+        ]
+
+    ];
+
+
