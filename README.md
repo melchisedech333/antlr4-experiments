@@ -14,6 +14,7 @@ Aqui estão meus estudos e experimentos utilizando o ANTLR4 (para análise de li
 - https://github.com/melchisedech333/antlr4-demonstration-project
 
 Basta baixar o projeto e deixá-lo no mesmo diretório deste com os experimentos.
+
 <b>Obs: </b> o nome do diretório do projeto base deve ser <b>project</b>, para que os scripts de construção dos testes possam funcionar devidamente.
 
 Para realizar um teste, basta executar o script <b>re-compile.sh</b> seguido do nome do diretório do teste, como no exemplo abaixo.
