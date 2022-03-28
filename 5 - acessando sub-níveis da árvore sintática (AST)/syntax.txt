@@ -1,0 +1,15 @@
+
+    var example :array =  [
+        10, name, 30 :int, 
+        [
+            "Verbum", "Logos" :str, "Divinus",
+            [
+                333:float
+            ]
+        ],
+        "Logos"
+    ], Jesus = Trindade;
+
+    var Verbum = Deus;
+
+
