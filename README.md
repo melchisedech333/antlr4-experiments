@@ -17,12 +17,14 @@ Basta baixar o projeto e deixá-lo no mesmo diretório deste com os experimentos
 
 <b>Obs: </b> o nome do diretório do projeto base deve ser <b>project</b>, para que os scripts de construção dos testes possam funcionar devidamente.
 
-Para realizar um teste, basta executar o script <b>re-compile.sh</b> seguido do nome do diretório do teste, como no exemplo abaixo.
+Para realizar um teste, basta executar o script <b>re-compile.sh</b> seguido do nome do diretório de teste, como no exemplo abaixo.
 
 ```bash
 ./re-compile.sh "1 - processando tokens (através de visitor)"
 ```
 
 Após compilar, imediatamente é executado o <b>parsing</b>, onde é passado como parâmetro o arquivo <b>syntax</b> existente no respectivo diretório.
+
+Assim é possível ir alterando os arquivos do Lexer, Parser e Syntax de teste, bem como o arquivo main.cpp em seus respectivos diretórios.
 
 
