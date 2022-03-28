@@ -1,0 +1,5 @@
+
+    var a :str  = "Verbum", b = 20, c:str = a;
+    var a       = "Divinus";
+
+
