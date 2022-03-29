@@ -1,0 +1,4 @@
+
+var a :test = "Verbum",  b = 10 var c = 10;
+
+
