@@ -28,7 +28,7 @@ expression
 
 expressionErrors
   : VAR variables {
-    notifyErrorListeners("Verbum Divinus");
+    notifyErrorListeners("Verbum Divino");
   }
   ;
 

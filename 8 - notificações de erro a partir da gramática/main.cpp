@@ -25,10 +25,18 @@ class MyParserErrorListener: public BaseErrorListener {
       const std::string &msg,
       std::exception_ptr e) 
   {
+    // Verifica se é erro do ANTLR4 ou se é de origem da gramática.
+    std::string message = msg;
+
+    if (message.compare("Verbum Divino") == 0) {
+      message = "Invalid variable defination.";
+    }
+
+    // Informações gerais.
     std::cout << " " << std::endl << std::endl;
     std::cout << " Filename: " << currentFileName << std::endl;
     std::cout << " Syntax error [" << line << "," << 
-      charPositionInLine << "] -> " << msg << std::endl << std::endl;
+      charPositionInLine << "] -> " << message << std::endl << std::endl;
     
     // Imprime linhas do erro.
     size_t errorLineLimit = 10;
@@ -57,20 +65,7 @@ class MyParserErrorListener: public BaseErrorListener {
 
     for (size_t a=0; a<size; a++)
       std::cout << ' ';
-    std::cout << "`--> Syntax error: " << msg << std::endl << std::endl;
-
-    // +++
-
-    Lexer *lexer = dynamic_cast<Lexer *>(recognizer);
-    CharStream *input = lexer->getInputStream();
-    std::string text = lexer->getErrorDisplay(
-      input->getText(
-        misc::Interval(
-          lexer->tokenStartCharIndex, input->index())));
-    if (text.empty())
-      text = " ";
-          
-    std::cout << "text: " << text << std::endl;
+    std::cout << "`--> Syntax error: " << message << std::endl << std::endl;
 
     exit(0);
   }
