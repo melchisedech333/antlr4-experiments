@@ -10,7 +10,7 @@ options {
   #endif
 }
 
-// Gramática.
+// Grammar.
 
 main
   : sentence EOF

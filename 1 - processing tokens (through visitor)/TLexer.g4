@@ -6,27 +6,27 @@ lexer grammar TLexer;
 	#endif
 }
 
-/* Filtra identificadores. */
+/* Identifiers. */
 IDENTIFIER
 	: [a-zA-Z][a-zA-Z0-9]+
 	;
 
-/* Filtra números. */
+/* Numbers. */
 NUMBER
     : [0-9]+
     ;
 
-/* Filtra nova linha. */
+/* New line. */
 NEWLINE
 	: ('\r' ? '\n' | '\r')+
 	;
 
-/* Ignora todos os espaços e tabs. */
+/* Ignore all spaces and tabs. */
 SPACETABS
 	: (' ' | '\t' ) -> skip
 	;
 
-/* Trata caracteres desconhecidos. */
+/* Handles unknown characters. */
 UNKNOWN
 	: . 
 	;
