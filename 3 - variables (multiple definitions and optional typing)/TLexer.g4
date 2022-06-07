@@ -17,10 +17,10 @@ SEPARATOR 	: ','		  	;
 END 		: ';'		  	;
 
 
-/* Ignora-os... */
+/* Ignore... */
 SPACETABS : (' ' | '\t' | '\r' | '\n' ) -> skip;
 
-/* Tokens desconhecidos. */
+/* Unknown tokens. */
 UNKNOWN	: . ;
 
 
