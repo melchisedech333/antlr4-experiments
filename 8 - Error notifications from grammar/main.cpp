@@ -14,7 +14,7 @@ std::vector<char> buffer;
 std::string currentFileName;
 
 //
-// Controle dos erros.
+// Error control.
 //
 class MyParserErrorListener: public BaseErrorListener {
   void syntaxError(
@@ -25,20 +25,20 @@ class MyParserErrorListener: public BaseErrorListener {
       const std::string &msg,
       std::exception_ptr e) 
   {
-    // Verifica se é erro do ANTLR4 ou se é de origem da gramática.
+    // Checks if it's an ANTLR4 error or if it's a grammar source.
     std::string message = msg;
 
     if (message.compare("Verbum Divino") == 0) {
       message = "Invalid variable defination.";
     }
 
-    // Informações gerais.
+    // General information.
     std::cout << " " << std::endl << std::endl;
     std::cout << " Filename: " << currentFileName << std::endl;
     std::cout << " Syntax error [" << line << "," << 
       charPositionInLine << "] -> " << message << std::endl << std::endl;
     
-    // Imprime linhas do erro.
+    // Print error lines.
     size_t errorLineLimit = 10;
     size_t startErrorLines = 1;
 
@@ -50,7 +50,7 @@ class MyParserErrorListener: public BaseErrorListener {
     for (size_t a=startErrorLines; a<=line; a++)
       printSourceLine(a, lineSize.length());
 
-    // Imprime apontador para caractere onde está o erro.
+    // Print pointer to character where error is.
     std::string lnSz = std::to_string((int) line);
     size_t lastLineSize = ((lineSize.length() == lnSz.length()) ? 2 : 1) + lnSz.length() + 4;
     size_t size = charPositionInLine + lastLineSize;
@@ -70,7 +70,7 @@ class MyParserErrorListener: public BaseErrorListener {
     exit(0);
   }
 
-  // Imprime linha do erro.
+  // Print error line.
   void printSourceLine (size_t line, size_t sizeCh) {
     size_t counter = 1;
     std::string lineSize = std::to_string((int) line);
@@ -97,7 +97,7 @@ class MyParserErrorListener: public BaseErrorListener {
 };
 
 //
-// Realiza acesso aos nodes da árvore sintática.
+// Performs access to the nodes of the syntax tree.
 //
 class  MyTParserBaseVisitor : public TParserBaseVisitor {
 public:
@@ -106,7 +106,6 @@ public:
 
 int main(int argc, const char **argv) {
 
-  // Verificações iniciais.
   char *filename = (char *) malloc(strlen(argv[1]) + 1);
 
   if (!filename) {
@@ -123,12 +122,10 @@ int main(int argc, const char **argv) {
     exit(0);
   }
 
-  // Carrega path completo do arquivo. 
   char actualpath [PATH_MAX+1];
   realpath(filename, actualpath);
   currentFileName = std::string(actualpath);
 
-  // Processa arquivo da syntax.
   std::cout << "\n+++++++++++++++++++++++++++" << std::endl;
   std::ifstream infile(filename);
 
@@ -145,7 +142,6 @@ int main(int argc, const char **argv) {
     std::cout << i;
   std::cout << std::endl;
 
-  // Processa tokens.
   std::cout << "\n+++++++++++++++++++++++++++" << std::endl;
   std::ifstream stream;
   stream.open(filename);
@@ -161,12 +157,10 @@ int main(int argc, const char **argv) {
 
   TParser parser(&tokens);
 
-  // Configura controle dos erros.
   MyParserErrorListener errorListner;
   parser.removeErrorListeners();
   parser.addErrorListener(&errorListner);
 
-  // Acessa árvore sintática através de visitor.
   std::cout << "\n+++++++++++++++++++++++++++" << std::endl;
 
   MyTParserBaseVisitor visitor;
