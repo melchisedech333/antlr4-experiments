@@ -47,7 +47,7 @@ Thus, it is possible to change the test Lexer, Parser and Syntax files, as well 
 - <b>clean-and-build.sh</b> - Recompiles 100% of the base project.
 - <b>re-compile.sh</b> - Recompile base project or need to recompile 100% of the project.
 
-<b>Obs:</b> o arquivo compilado pelo projeto base fica dentro do diretório <b>project</b>, com o nome <b>parsing</b>.
+<b>Note:</b> the file compiled by the base project is located inside the <b>project</b> directory, with the name <b>parsing</b>.
 
 <br>
 
