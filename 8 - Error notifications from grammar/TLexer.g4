@@ -6,7 +6,6 @@ lexer grammar TLexer;
 	#endif
 }
 
-/* Tokens. */
 STRING 		: '"' .*? '"' 	;
 INTEGER		: [0-9]+ 	  	;
 VAR  		: 'var'			;
@@ -16,11 +15,8 @@ ATTR 		: '=' 		  	;
 SEPARATOR 	: ','		  	;
 END 		: ';'		  	;
 
-
-/* Ignora-os... */
 SPACETABS : (' ' | '\t' | '\r' | '\n' ) -> skip;
 
-/* Tokens desconhecidos. */
 UNKNOWN	: . ;
 
 
