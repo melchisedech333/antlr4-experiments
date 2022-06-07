@@ -38,14 +38,14 @@ To run a test, just run the script <b>clean-and-build.sh</b> or <b>re-compile.sh
 ./re-compile.sh "1 - processing tokens (through visitor)"
 ```
 
-Após compilar, imediatamente é executado o <b>parsing</b>, onde é passado como parâmetro o arquivo <b>syntax</b> existente no respectivo diretório.
+After compiling, <b>parsing</b> is immediately executed, where the syntax file existing in the respective directory is passed as a parameter.
 
-Assim é possível ir alterando os arquivos do Lexer, Parser e Syntax de teste, bem como o arquivo main.cpp em seus respectivos diretórios.
+Thus, it is possible to change the test Lexer, Parser and Syntax files, as well as the <b>main.cpp</b> file in their respective directories.
 
-<b>Breve descrição dos scripts:</b>
-- <b>clean.sh</b> - Limpa arquivos de compilações anteriores do projeto base. Obs: este script <b>não</b> necessita de parâmetros.
-- <b>clean-and-build.sh</b> - Recompila 100% do projeto base.
-- <b>re-compile.sh</b> - Recompila projeto base nem necessitar recompilar 100% do projeto.
+<b>Brief description of the scripts:</b>
+- <b>clean.sh</b> - Cleans files from previous builds from the base project. <b>Note:</b> this script does not need parameters.
+- <b>clean-and-build.sh</b> - Recompiles 100% of the base project.
+- <b>re-compile.sh</b> - Recompile base project or need to recompile 100% of the project.
 
 <b>Obs:</b> o arquivo compilado pelo projeto base fica dentro do diretório <b>project</b>, com o nome <b>parsing</b>.
 
