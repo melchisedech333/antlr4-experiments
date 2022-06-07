@@ -11,10 +11,8 @@ WORD : [a-zA-Z\u0080-\u{10FFFF}]+;
 
 STRING: '"' .*? '"';
 
-/* Ignora-os... */
 SPACETABS : (' ' | '\t' | '\r' | '\n' ) -> skip;
 
-/* Tokens desconhecidos. */
 UNKNOWN	: . ;
 
 
