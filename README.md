@@ -17,6 +17,20 @@ Basta baixar o projeto e deixá-lo no mesmo diretório deste com os experimentos
 
 <b>Obs: </b> o nome do diretório do projeto base deve ser <b>project</b>, para que os scripts de construção dos testes possam funcionar devidamente.
 
+<br>
+
+:bookmark_tabs: Table of Contents
+-----
+* [Instructions](#hammer_and_wrench-instructions)
+* [Author](#smiley-author)
+* [License](#scroll-license)
+-----
+
+<br>
+
+:hammer_and_wrench: Instructions
+---
+
 Para realizar um teste, basta executar o script <b>clean-and-build.sh</b> ou <b>re-compile.sh</b> seguido do nome do diretório de teste, como no exemplo abaixo.
 
 ```bash
@@ -34,5 +48,24 @@ Assim é possível ir alterando os arquivos do Lexer, Parser e Syntax de teste, 
 - <b>re-compile.sh</b> - Recompila projeto base nem necessitar recompilar 100% do projeto.
 
 <b>Obs:</b> o arquivo compilado pelo projeto base fica dentro do diretório <b>project</b>, com o nome <b>parsing</b>.
+
+<br>
+
+:smiley: Author
+---
+
+YouTube: [Melchisedech](https://www.youtube.com/channel/UC4Sh4wxncr5arnydpUfWPKw)<br>
+Twitter: [Melchisedech333](https://twitter.com/Melchisedech333)<br>
+Blog: [melchisedech333.github.io](https://melchisedech333.github.io/)<br>
+LinkedIn: [Melchisedech Rex](https://www.linkedin.com/in/melchisedech-rex-724152235/)
+
+<img src="https://github.com/melchisedech333.png?size=200" height="100" />
+
+<br>
+
+:scroll: License
+---
+
+[ BSD-3-Clause license](./LICENSE.txt)
 
 
