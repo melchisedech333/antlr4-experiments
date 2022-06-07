@@ -9,13 +9,13 @@
 
 <br>
 
-Aqui estão meus estudos e experimentos utilizando o ANTLR4 (para análise de linguagem). O código alvo neste caso é em C++, e para isto é utilizado um projeto base, que pode ser encontrado aqui:
+Here are my studies and experiments using ANTLR4 (for language analysis). The target code in this case is in C++, and for this a base project is used, which can be found here:
 
 - https://github.com/melchisedech333/antlr4-demonstration-project
 
-Basta baixar o projeto e deixá-lo no mesmo diretório deste com os experimentos.
+Just download the project and leave it in the same directory with the experiments.
 
-<b>Obs: </b> o nome do diretório do projeto base deve ser <b>project</b>, para que os scripts de construção dos testes possam funcionar devidamente.
+<b>Note:</b> the base project directory name must be <b>project</b>, so that the test build scripts can work properly.
 
 <br>
 
@@ -31,11 +31,11 @@ Basta baixar o projeto e deixá-lo no mesmo diretório deste com os experimentos
 :hammer_and_wrench: Instructions
 ---
 
-Para realizar um teste, basta executar o script <b>clean-and-build.sh</b> ou <b>re-compile.sh</b> seguido do nome do diretório de teste, como no exemplo abaixo.
+To run a test, just run the script <b>clean-and-build.sh</b> or <b>re-compile.sh</b> followed by the name of the test directory, as in the example below.
 
 ```bash
-./clean-and-build.sh "1 - processando tokens (através de visitor)"
-./re-compile.sh "1 - processando tokens (através de visitor)"
+./clean-and-build.sh "1 - processing tokens (through visitor)"
+./re-compile.sh "1 - processing tokens (through visitor)"
 ```
 
 Após compilar, imediatamente é executado o <b>parsing</b>, onde é passado como parâmetro o arquivo <b>syntax</b> existente no respectivo diretório.
