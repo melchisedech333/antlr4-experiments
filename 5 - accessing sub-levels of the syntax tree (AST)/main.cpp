@@ -10,7 +10,7 @@ using namespace antlrcpptest;
 using namespace antlr4;
 
 //
-// Realiza acesso aos nodes da árvore sintática.
+// Performs access to the nodes of the syntax tree.
 //
 class  MyTParserBaseVisitor : public TParserBaseVisitor {
 public:
@@ -83,7 +83,6 @@ public:
 
 int main(int argc, const char **argv) {
 
-  // Imprime arquivo da syntax de teste.
   std::cout << "\n+++++++++++++++++++++++++++" << std::endl;
 
   std::ifstream infile(argv[1]);
@@ -102,16 +101,13 @@ int main(int argc, const char **argv) {
     std::cout << i;
   std::cout << std::endl;
 
-  // Realiza leitura / processamento de arquivo (syntax.txt).
   std::ifstream stream;
   stream.open(argv[1]);
   
-  // Processa tokens.
   ANTLRInputStream input(stream);
   TLexer lexer(&input);
   CommonTokenStream tokens(&lexer);
 
-  // Acessa lista de tokens.
   std::cout << "\n+++++++++++++++++++++++++++" << std::endl;
   
   tokens.fill();
@@ -119,7 +115,6 @@ int main(int argc, const char **argv) {
     std::cout << token->toString() << std::endl;
   }
 
-  // Acessa árvore sintática através de visitor.
   std::cout << "\n+++++++++++++++++++++++++++" << std::endl;
 
   TParser parser(&tokens);
