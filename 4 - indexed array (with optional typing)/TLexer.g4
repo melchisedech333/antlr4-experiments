@@ -18,10 +18,10 @@ END 			: ';'		  	;
 ARRAY_OPEN		: '['			;
 ARRAY_CLOSE		: ']'			;
 
-/* Ignora-os... */
+/* Ignore... */
 SPACETABS : (' ' | '\t' | '\r' | '\n' ) -> skip;
 
-/* Tokens desconhecidos. */
+/* Unknown tokens. */
 UNKNOWN	: . ;
 
 
