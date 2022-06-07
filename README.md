@@ -1,5 +1,3 @@
-### :arrow_right: Meus experimentos com parsing (ANTLR4)
-
 <p align='center'>
     <img src="extras/images/Parse_Tree_Derivations.svg" width="500" >
 </p>
@@ -8,6 +6,8 @@
     <img src="https://img.shields.io/github/languages/count/melchisedech333/antlr4-experiments?style=for-the-badge" >
     <img src="https://img.shields.io/github/repo-size/melchisedech333/antlr4-experiments?style=for-the-badge" >
 </p>
+
+<br>
 
 Aqui estão meus estudos e experimentos utilizando o ANTLR4 (para análise de linguagem). O código alvo neste caso é em C++, e para isto é utilizado um projeto base, que pode ser encontrado aqui:
 
