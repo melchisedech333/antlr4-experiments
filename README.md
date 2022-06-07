@@ -17,6 +17,8 @@ Just download the project and leave it in the same directory with the experiment
 
 <b>Note:</b> the base project directory name must be <b>project</b>, so that the test build scripts can work properly.
 
+**If my code has helped you, please consider [sponsoring me](https://github.com/sponsors/melchisedech333) :blue_heart:** 
+
 <br>
 
 :bookmark_tabs: Table of Contents
