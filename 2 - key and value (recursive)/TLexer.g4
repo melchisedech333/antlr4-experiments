@@ -14,10 +14,10 @@ CLOSE 		: '}'		  ;
 ATTR 		: ':' 		  ;
 SEPARATOR 	: ','		  ;
 
-/* Ignora-os... */
+/* Ignore... */
 SPACETABS : (' ' | '\t' | '\r' | '\n' ) -> skip;
 
-/* Tokens desconhecidos. */
+/* Unknown tokens. */
 UNKNOWN	: . ;
 
 
