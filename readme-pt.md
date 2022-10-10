@@ -26,7 +26,7 @@ Basta baixar o projeto e deixá-lo no mesmo diretório dos experimentos.
 :bookmark_tabs: Sumário
 -----
 * [Instruções](#hammer_and_wrench-instruções)
-* [Autor](#smiley-author)
+* [Autor](#smiley-autor)
 * [Licença](#scroll-licença)
 -----
 
@@ -55,7 +55,7 @@ Desta maneira é possível alterar os arquivos de teste Lexer, Parser e Syntax, 
 
 <br>
 
-:smiley: Author
+:smiley: Autor
 ---
 
 Patrocinar: [melchisedech333](https://github.com/sponsors/melchisedech333)<br>
