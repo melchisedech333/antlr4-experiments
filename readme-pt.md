@@ -58,7 +58,7 @@ Desta maneira é possível alterar os arquivos de teste Lexer, Parser e Syntax, 
 :smiley: Author
 ---
 
-Sponsor: [melchisedech333](https://github.com/sponsors/melchisedech333)<br>
+Patrocinar: [melchisedech333](https://github.com/sponsors/melchisedech333)<br>
 YouTube: [Melchisedech](https://www.youtube.com/channel/UC4Sh4wxncr5arnydpUfWPKw)<br>
 Twitter: [Melchisedech333](https://twitter.com/Melchisedech333)<br>
 Blog: [melchisedech333.github.io](https://melchisedech333.github.io/)<br>
