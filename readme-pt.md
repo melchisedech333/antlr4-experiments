@@ -9,6 +9,8 @@
 
 <br>
 
+Language: <a href="readme.md">EN-US</a>
+
 Here are my studies and experiments using ANTLR4 (for language analysis). The target code in this case is in C++, and for this a base project is used, which can be found here:
 
 - https://github.com/melchisedech333/antlr4-demonstration-project
