@@ -11,36 +11,38 @@
 
 Language: <a href="readme.md">EN-US</a>
 
-Here are my studies and experiments using ANTLR4 (for language analysis). The target code in this case is in C++, and for this a base project is used, which can be found here:
+Aqui estão meus estudos e experimentos utilizando o ANTLR4 (para análise de gramáticas livre de contexto). O runtime para o ANTLR4 utilizado é voltado para C++, e para isso é utilizado um projeto base, que pode ser encontrado aqui:
 
 - https://github.com/melchisedech333/antlr4-demonstration-project
 
-Just download the project and leave it in the same directory with the experiments.
+Basta baixar o projeto e deixá-lo no mesmo diretório dos experimentos.
 
-<b>Note:</b> the base project directory name must be <b>project</b>, so that the test build scripts can work properly.
+<b>Obs:</b> o nome do diretório do projeto base deve ser <b>project</b>, para que os script de compilação funcionem corretamente.
 
-**If my code has helped you, please consider [sponsoring me](https://github.com/sponsors/melchisedech333) :blue_heart:** 
-
-<br>
-
-:bookmark_tabs: Table of Contents
------
-* [Instructions](#hammer_and_wrench-instructions)
-* [Author](#smiley-author)
-* [License](#scroll-license)
------
+**Se meu código te ajudou em algo, considere [me patrocinar](https://github.com/sponsors/melchisedech333) :blue_heart:** 
 
 <br>
 
-:hammer_and_wrench: Instructions
+:bookmark_tabs: Sumário
+-----
+* [Instruções](#hammer_and_wrench-instruções)
+* [Autor](#smiley-author)
+* [Licença](#scroll-licença)
+-----
+
+<br>
+
+:hammer_and_wrench: Instruções
 ---
 
-To run a test, just run the script <b>clean-and-build.sh</b> or <b>re-compile.sh</b> followed by the name of the test directory, as in the example below.
+Para executar um teste, basta executar o script <b>clean-and-build.sh</b> ou <b>re-compile.sh</b> seguido do nome do diretório de teste, como no exemplo abaixo.
 
 ```bash
 ./clean-and-build.sh "1 - processing tokens (through visitor)"
 ./re-compile.sh "1 - processing tokens (through visitor)"
 ```
+
+
 
 After compiling, <b>parsing</b> is immediately executed, where the syntax file existing in the respective directory is passed as a parameter.
 
@@ -68,9 +70,9 @@ LinkedIn: [Melchisedech Rex](https://www.linkedin.com/in/melchisedech-rex-724152
 
 <br>
 
-:scroll: License
+:scroll: Licença
 ---
 
-[ BSD-3-Clause license](./LICENSE.txt)
+[ BSD-3-Clause license](./license)
 
 
