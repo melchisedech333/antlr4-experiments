@@ -42,18 +42,16 @@ Para executar um teste, basta executar o script <b>clean-and-build.sh</b> ou <b>
 ./re-compile.sh "1 - processing tokens (through visitor)"
 ```
 
+Após a compilação, o binário chamado <b>parsing</b> é executado imediatamente, onde o arquivo de sintaxe existente no respectivo diretório é passado como parâmetro.
 
+Desta maneira é possível alterar os arquivos de teste Lexer, Parser e Syntax, bem como o arquivo <b>main.cpp</b> em seus respectivos diretórios.
 
-After compiling, <b>parsing</b> is immediately executed, where the syntax file existing in the respective directory is passed as a parameter.
+<b>Breve descrição dos scripts:</b>
+- <b>clean.sh</b> - Limpa arquivos de compilações anteriores do projeto base. <b>Obs:</b> este script não precisa de parâmetros.
+- <b>clean-and-build.sh</b> - Recompila 100% do projeto base.
+- <b>re-compile.sh</b> - Compila o projeto base sem ter que compilar 100% do projeto.
 
-Thus, it is possible to change the test Lexer, Parser and Syntax files, as well as the <b>main.cpp</b> file in their respective directories.
-
-<b>Brief description of the scripts:</b>
-- <b>clean.sh</b> - Cleans files from previous builds from the base project. <b>Note:</b> this script does not need parameters.
-- <b>clean-and-build.sh</b> - Recompiles 100% of the base project.
-- <b>re-compile.sh</b> - Recompile base project or need to recompile 100% of the project.
-
-<b>Note:</b> the file compiled by the base project is located inside the <b>project</b> directory, with the name <b>parsing</b>.
+<b>Obs:</b> o arquivo compilado pelo projeto base está localizado dentro do diretório <b>project</b>, com o nome <b>parsing</b>.
 
 <br>
 

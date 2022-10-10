@@ -49,7 +49,7 @@ Thus, it is possible to change the test Lexer, Parser and Syntax files, as well 
 <b>Brief description of the scripts:</b>
 - <b>clean.sh</b> - Cleans files from previous builds from the base project. <b>Note:</b> this script does not need parameters.
 - <b>clean-and-build.sh</b> - Recompiles 100% of the base project.
-- <b>re-compile.sh</b> - Recompile base project or need to recompile 100% of the project.
+- <b>re-compile.sh</b> - Compile the base project without having to compile 100% of the project.
 
 <b>Note:</b> the file compiled by the base project is located inside the <b>project</b> directory, with the name <b>parsing</b>.
 
